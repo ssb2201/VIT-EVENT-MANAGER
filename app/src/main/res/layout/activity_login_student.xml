@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".login_student">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/logo_small"
+        android:tint="@color/green_400" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="179dp"
+        android:text="LOGIN FOR STUDENT"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/green_400"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/username_stud"
+        android:hint="Registration No"
+        android:textAllCaps="true"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:theme="@style/EditText.Green"
+
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="226dp"
+        android:hint="Password"
+        android:id="@+id/password_stud"
+        android:theme="@style/EditText.Green"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        />
+
+
+    <Button
+        android:id="@+id/login_stud"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:background="@drawable/btn_rounded_green_300"
+        android:text="S I G N  I N"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:text="Don't have an  account ? Sign Up."
+        android:textSize="20dp"
+        android:id="@+id/upbtn"
+        android:textColor="@android:color/background_dark"
+        />
+
+
+</RelativeLayout>

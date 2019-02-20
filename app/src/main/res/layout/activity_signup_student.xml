@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".signup_student">
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/logo_small"
+        android:tint="@color/green_400" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="164dp"
+        android:text="SIGN UP FOR STUDENTS"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/green_400"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:theme="@style/EditText.Green"
+        />
+
+
+    <EditText
+        android:id="@+id/school_name_stud"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="School Name"
+        android:layout_marginTop="340dp"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:theme="@style/EditText.Green"
+       />
+
+
+    <EditText
+        android:id="@+id/reg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:hint="Registration No"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:theme="@style/EditText.Green"
+
+        />
+
+    <EditText
+        android:id="@+id/pass_stud"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="480dp"
+        android:hint="Password"
+        android:theme="@style/EditText.Green"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:singleLine="true"
+
+        />
+
+
+    <Button
+        android:id="@+id/signup_stud"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/btn_rounded_green_300"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
