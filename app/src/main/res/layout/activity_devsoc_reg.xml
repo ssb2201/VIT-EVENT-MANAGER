@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="match_parent"
+    tools:context=".hackgrid_view">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="49dp"
+        android:text="DEVSOC"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/event"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/organise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/event"
+        android:layout_marginTop="132dp"
+        android:text="Organised By CODECHEF"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:text="Description :  A 36 hours long hackathon \n where participants can come up with innovative solution.  "
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/ven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/event"
+        android:layout_marginTop="189dp"
+        android:text="Venue: ANNA AUDI"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/fees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/des"
+        android:layout_marginBottom="280dp"
+        android:text="Fees: FREE"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/perks"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="150dp"
+        android:text="Perks: Cash Prize , Certificate, T-shirts , stickers etc."
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:text="Date and Time: 22-24 February, 9 am"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="#1E90FF"
+        android:text="Register" />
+
+
+</RelativeLayout>

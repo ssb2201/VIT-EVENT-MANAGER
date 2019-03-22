@@ -23,6 +23,8 @@ public class signup_club extends AppCompatActivity {
     EditText clubname,school,username,pass;
     Button signupclubbtn;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,23 +72,30 @@ public class signup_club extends AppCompatActivity {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
 
 
-            final DatabaseReference myRef = database.getReference("Clubs").child(club_name);
+            final DatabaseReference myRef = database.getReference("Clubs").child(user_name);
 
             myRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    if (dataSnapshot.exists()){
+                    if (dataSnapshot.exists())
+                    {
 
-                        Toast.makeText(getApplicationContext(), "Account Exists", Toast.LENGTH_SHORT).show();
+                     //   Toast.makeText(getApplicationContext(), "Account Exists", Toast.LENGTH_SHORT).show();
+
                     }
+                   else
 
-                   else {
+                       {
 
-                        club Club = new club(club_name, school_name, user_name, pass_club);
-                        myRef.setValue(Club);
-                        Toast.makeText(getApplicationContext(), "Account successfully made.Please Login", Toast.LENGTH_SHORT).show();
+                        myRef.child("clubname").setValue(club_name);
+                        myRef.child("username").setValue(user_name);
+                        myRef.child("schoolname").setValue(school_name);
+                        myRef.child("password").setValue(pass_club);
+
+
                         Intent i = new Intent(signup_club.this, login_clubs.class);
                         startActivity(i);
+                        Toast.makeText(getApplicationContext(), "Account successfully made.Please Login", Toast.LENGTH_SHORT).show();
                     }
 
                 }

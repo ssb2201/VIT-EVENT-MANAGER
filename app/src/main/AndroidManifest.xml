@@ -20,7 +20,23 @@
         <activity android:name=".login_student" />
         <activity android:name=".signup_club" />
         <activity android:name=".signup_student" />
-        <activity android:name=".chapter_addevent"></activity>
+        <activity android:name=".chapter_addevent" />
+        <activity android:name=".AddEvent" />
+        <activity android:name=".ViewEvent" />
+        <activity android:name=".update_event" />
+        <activity android:name=".delete_event" />
+        <activity android:name=".hackgrid_view" />
+        <activity android:name=".devsoc" />
+        <activity android:name=".c2c" />
+        <activity android:name=".hackgrid_reg" />
+        <activity android:name=".devsoc_reg" />
+        <activity android:name=".c2c_reg" />
+        <activity android:name=".event_register" />
+        <activity android:name=".student_page" />
+        <activity android:name=".Booking" />
+        <activity android:name=".acknowledge" />
+        <activity android:name=".delete" />
+        <activity android:name=".Requirements"></activity>
     </application>
 
 </manifest>

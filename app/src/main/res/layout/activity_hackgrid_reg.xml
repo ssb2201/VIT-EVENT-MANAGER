@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="match_parent"
+    tools:context=".hackgrid_view">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="49dp"
+        android:text="HackGrid"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/event"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:text="Organised By Apple Developers Group"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/organise"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="244dp"
+        android:text="Description :  A 36 hours long hackathon \n where participants can come up with innovative solution.  "
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/ven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/des"
+        android:layout_alignStart="@+id/fees"
+        android:layout_marginBottom="-210dp"
+        android:text="Venue: CS Hall"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/fees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/event"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="279dp"
+        android:text="Fees: Rs.150"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/perks"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="150dp"
+        android:text="Perks: Apple Certificate, T-shirts , stickers etc."
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/organise"
+        android:layout_marginBottom="230dp"
+        android:text="Date and Time: 10-11 March, 9 am"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="#1E90FF"
+        android:text="Register" />
+
+
+
+</RelativeLayout>

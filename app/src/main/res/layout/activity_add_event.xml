@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".AddEvent">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="239dp"
+        android:layout_marginStart="37dp"
+        android:text="Add Event"
+        android:textColor="#00FF00"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:theme="@style/EditText.Green"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:hint="Event Name"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/organiser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <EditText
+        android:id="@+id/organiser"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:theme="@style/EditText.Green"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:hint="Organised By"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text"
+        android:theme="@style/EditText.Green"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:hint="Description"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/venue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/organiser" />
+
+
+    <EditText
+        android:id="@+id/venue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text"
+        android:theme="@style/EditText.Green"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+
+        android:layout_marginTop="8dp"
+        android:hint="Venue"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/fee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des" />
+
+
+    <EditText
+        android:id="@+id/fee"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+        android:theme="@style/EditText.Green"
+        android:layout_marginTop="10dp"
+        android:hint="Fees"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/seats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venue" />
+
+    <EditText
+        android:id="@+id/seats"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/text"
+        android:theme="@style/EditText.Green"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:hint="Total Seats"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/perks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fee" />
+
+    <EditText
+        android:id="@+id/perks"
+        android:layout_width="300dp"
+        android:theme="@style/EditText.Green"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="7dp"
+        android:hint="Perks"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seats" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="56dp"
+        android:theme="@style/EditText.Green"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:hint="Date and Time"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perks" />
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/btn_rounded_green_300"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Date" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

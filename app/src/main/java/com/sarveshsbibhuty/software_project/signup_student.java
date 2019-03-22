@@ -23,6 +23,9 @@ public class signup_student extends AppCompatActivity {
     Button btnup;
 
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,13 +82,19 @@ public class signup_student extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if (dataSnapshot.exists()){
 
-                            Toast.makeText(getApplicationContext(), "Account Exists", Toast.LENGTH_SHORT).show();
+                    //        Toast.makeText(getApplicationContext(), "Account Exists", Toast.LENGTH_SHORT).show();
+
                         }
 
                         else {
 
-                            Student student  = new Student(na,school_stud,registration_no,pass);
-                            myRef.setValue(student);
+
+                            myRef.child("name").setValue(na);
+                            myRef.child("reg").setValue(registration_no);
+                            myRef.child("schoolname").setValue(school_stud);
+                            myRef.child("password").setValue(pass);
+
+
                             Toast.makeText(getApplicationContext(), "Account successfully made.Please Login", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(signup_student.this, login_student.class);
                             startActivity(i);

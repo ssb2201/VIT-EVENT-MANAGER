@@ -27,6 +27,12 @@ public class login_clubs extends AppCompatActivity {
     String value;
 
     @Override
+    public void onBackPressed() {
+
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

@@ -1,6 +1,8 @@
 package com.sarveshsbibhuty.software_project;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +27,12 @@ public class login_student extends AppCompatActivity {
     Button login;
     TextView signupbtn;
     String value;
+
+    @Override
+    public void onBackPressed() {
+
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,8 +77,13 @@ public class login_student extends AppCompatActivity {
                         if(value.equals(pass)) {
 
                             Toast.makeText(getApplicationContext(),"Login Successful",Toast.LENGTH_SHORT).show();
+                            SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                            SharedPreferences.Editor editor = pref.edit();
+                            editor.putString("reg",reg);
+                            editor.commit();
 
-                            Intent intent=new Intent(login_student.this,chapter_addevent.class);
+
+                            Intent intent=new Intent(login_student.this,student_page.class);
                             startActivity(intent);
 
                         }
